@@ -1,0 +1,285 @@
+/* STYLE SHEET FOR THE WEBSITE*/
+
+
+/* If the screen size is 600px wide or less, hide the element */
+/* @media only screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+} */
+/*
+rgba( 255, 99, 71, 0.4)-->
+
+/* hsl(hue, saturation, lightness)
+  hue 0-360 0 is red, 120 is green, 240 is blue
+  sat is % 0 is shade of gray, 100% is full color
+  lightness is % 0 is black and 100% is white */
+/* html,
+header,
+body,
+footer{
+  transform: scale(1);
+  transform-origin: (0, 0);
+} */
+
+@font-face {
+font-family: TitleFont-1;
+src: url(Fonts/font_5/Almendra_Display/AlmendraDisplay-Regular.ttf);
+}
+#titleFont1{
+  text-align: center;
+  font-family: TitleFont-1;
+  color: grey;
+  font-weight: bold;
+}
+
+@font-face {
+font-family: TitleFont-2;
+src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
+}
+#titleFont2 {
+  text-align: center;
+  font-family: TitleFont-2;
+  color: black;
+}
+
+@font-face {
+  font-family: TitleFont-3;
+  src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
+}
+#titleFont3 {
+    font-family: TitleFont-3;
+    text-align: center;
+    color: white;
+
+}
+
+
+/* BACKGROUNDS */
+.bg-1 {
+   background-color:   #701B09;
+}
+.bg-2 {
+  background-color: #701B09;
+}
+.bg-3 {
+  background-color:  #343434 ;
+}
+
+
+/* NAVBAR */
+.navbar {
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+ul {
+  text-shadow: 2px 2px 5px black;
+  color: white;
+}
+li a {
+  font-size: 20px;
+  color: white;
+}
+h1 {
+padding: 15px;
+}
+p {
+font-family: titleFont-2;
+font-size: 20px;
+color: white;
+}
+/* You have to follow a hierarchy sequence:
+
+Link, Hover, Visited
+
+For example: */
+
+a.links {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+a.img-links{
+  border-style: solid;
+  border-width: medium;
+  border-color: #701B09;
+}
+a.Title-links{
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  font-size: 32.5px;
+  color: Grey;
+}
+.Title-links:hover {
+  text-decoration:none;
+  color: #701B09;
+}
+.links:hover {
+  text-decoration:none;
+  color: #701B09;
+}
+
+/* GALLERY THUMBNAILS */
+.row {
+  align-items: baseline;
+}
+
+/* viewResumeButton  */
+.viewResumeButton {
+  font-family: titleFont-3;
+  background-color: grey;
+  color: black;
+  padding: 5px;
+  border: 3px solid #250000;
+}
+.viewResumeButton:hover {
+  color: #701B09;
+  background-color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin:auto
+  /* Position the image container (needed to position the left and right arrows) */
+  position: relative;
+  }
+}
+.container-fluid {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: 50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  text-decoration: none;
+  color: #701B09;
+  background-color:  #8b8a8a;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  background-color: #222;
+  border: solid grey;
+  border-width: thin;
+  padding: 5px 5px;
+  color: white;
+}
+
+.row {
+    align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 10%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+/* BACK BUTTON */
+.button {
+  display: inline-block;
+  padding: 3px 3px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {
+  background-color: black;
+}
+.button:active {
+  background-color: grey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+footer {
+  text-shadow: 2px 2px 5px black;
+  border: solid  #250000;
+  font-family: titleFont1;
+  padding: 0px;
+  color: black;
+}
