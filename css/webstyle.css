@@ -62,13 +62,13 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
 
 /* BACKGROUNDS */
 .bg-1 {
-   background-color:   #701B09;
+  background-color: #701B09;
 }
 .bg-2 {
   background-color: #701B09;
 }
 .bg-3 {
-  background-color:  #828282;
+  background-color: #6C6C6C;
 }
 
 
@@ -78,6 +78,7 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
 }
 .navbar {
   text-shadow: 2px 2px 5px black;
+  padding: 5px;
   margin-bottom: 0;
   border-radius: 0;
 }
@@ -85,38 +86,28 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
   overflow: auto;
 }
 
+/* LISTS */
 ul {
   text-shadow: 2px 2px 5px black;
   color: white;
 }
 li a {
-  font-size: 20px;
+  font-size: 19px;
   color: white;
 }
 h1 {
 padding: 15px;
 }
+h6 {
+  color: black;
+}
 p {
+text-align: center;
 font-family: titleFont-2;
-font-size: 20px;
 color: white;
 }
 
-/* BOX DESIGNS */
-#boxDesign {
-  border-left: 6px solid black;
-  height: 430px;
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-}
-#boxDesignR {
-  border-left: 6px solid black;
-  height: 410px;
-  position: absolute;
-  right: 0px;
-  bottom: 0;
-}
+
 
 
 
@@ -161,9 +152,11 @@ a.Title-links{
 
 /* PICTURE OF ME */
 .myImg {
-  width: 60%;
-  border-radius: 8px;
-  box-shadow: 5px 10px 8px 10px #5F5F5F;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  width: 70%;
+
 }
 
 /* WRITING */
@@ -203,8 +196,6 @@ a.Title-links{
 }
 
 img {
-  -webkit-box-shadow: 3px 3px 5px 6px black;
-  box-shadow: 1px 1px 1px black;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -243,7 +234,7 @@ SECOND SET OF ARROWS */
   cursor: pointer;
   position: absolute;
   width: auto;
-  top: 70%;
+  top: 50%;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -345,14 +336,198 @@ SECOND SET OF ARROWS */
 
 
 
+/* BOX DESIGNS */
+/* LEFT SIDE */
 
-.footer {
-  text-shadow: 2px 2px 5px black;
-  border: solid  #250000;
-  font-family: titleFont1;
-  padding: 0px;
-  color: black;
+#boxDesign1 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid #424242;
+  height: 475px;
+  width: 8px;
+  position: relative;
+  left: 0px;
   position: fixed;
+  left: 0;
+  bottom: 0;
+}
+#boxDesign2 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 10px solid #8E8E8E;
+  height: 290px;
+  width: 10px;
+  position: relative;
+  position: fixed;
+  left: 8px;
+  bottom: 0;
+}
+#boxDesign3 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid #2F0505;
+  height: 220px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  left: 18px;
+  bottom: 0;
+}
+#boxDesign4 {
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 6px solid #C3C3C3;
+  height: 150px;
+  width: 6px;
+  position: relative;
+  position: fixed;
+  left: 26px;
+  bottom: 0;
+}
+#boxDesign5 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid #424242;
+  height: 100px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  left: 32px;
+  bottom: 0;
+}
+#boxDesign6 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid black;
+  height: 70px;
+  width: 8px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  left: 40px;
+  bottom: 0;
+}
+#boxDesign7 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid white;
+  height: 30px;
+  width: 8px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  left: 48px;
+  bottom: 0;
+}
+#boxDesign8 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 6px solid #2F0505;
+  height: 10px;
+  width: 6px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  left: 56px;
+  bottom: 0;
+}
+
+
+
+/* RIGHT SIDE  */
+#boxDesignR1 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 8px solid #424242;
+  height: 475px;
+  width: 8px;
+  position: relative;
+  right: 0px;
+  position: fixed;
+  bottom: 0;
+}
+#boxDesignR2 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 10px solid #8E8E8E;
+  height: 290px;
+  width: 10px;
+  position: relative;
+  position: fixed;
+  right: 8px;
+  bottom: 0;
+}
+#boxDesignR3 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 8px solid #2F0505;
+  height: 220px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  right: 18px;
+  bottom: 0;
+}
+#boxDesignR4 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 6px solid #C3C3C3;
+  height: 150px;
+  width: 6px;
+  position: relative;
+  position: fixed;
+  right: 26px;
+  bottom: 0;
+}
+#boxDesignR5 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 8px solid #424242;
+  height: 100px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  right: 32px;
+  bottom: 0;
+}
+#boxDesignR6 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid black;
+  height: 70px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  right: 40px;
+  bottom: 0;
+}
+#boxDesignR7 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 8px solid white;
+  height: 30px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  right: 48px;
+  bottom: 0;
+}
+#boxDesignR8 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 6px solid #2F0505;
+  height: 10px;
+  width: 6px;
+  position: relative;
+  position: fixed;
+  right: 56px;
+  bottom: 0;
+}
+
+#footer,
+.footer {
+  text-shadow: 0px 0px 5px black;
+  font-family: titleFont1;
+  color: black;
+  position: relative;
   width: 100%;
   left: 0;
   bottom: 0;
