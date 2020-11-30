@@ -50,7 +50,7 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
 #titleFont3 {
     font-family: TitleFont-3;
     text-align: center;
-    color: white;
+    color: 404040;
 }
 
 #titleFont4 {
@@ -68,16 +68,23 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
   background-color: #701B09;
 }
 .bg-3 {
-  background-color:  #5c5c5c;
+  background-color:  #828282;
 }
 
 
 /* NAVBAR */
+#myNavbar{
+  float: right;
+}
 .navbar {
   text-shadow: 2px 2px 5px black;
   margin-bottom: 0;
   border-radius: 0;
 }
+.collapse {
+  overflow: auto;
+}
+
 ul {
   text-shadow: 2px 2px 5px black;
   color: white;
@@ -94,6 +101,25 @@ font-family: titleFont-2;
 font-size: 20px;
 color: white;
 }
+
+/* BOX DESIGNS */
+#boxDesign {
+  border-left: 6px solid black;
+  height: 430px;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+#boxDesignR {
+  border-left: 6px solid black;
+  height: 410px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
+
+
+
 /* You have to follow a hierarchy sequence:
 
 Link, Hover, Visited
@@ -132,9 +158,21 @@ a.Title-links{
 
 
 /* ABOUT ME */
-.aboutSection {
-  float: left;
+
+/* PICTURE OF ME */
+.myImg {
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 5px 10px 8px 10px #5F5F5F;
 }
+
+/* WRITING */
+.aboutSection {
+  float: right;
+  margin-left: 25px;
+}
+
+
 
 /* viewResumeButton  */
 .viewResumeButton {
@@ -147,6 +185,7 @@ a.Title-links{
 .viewResumeButton:hover {
   color: #701B09;
   background-color: white;
+  font-color: black;
 }
 
 .center {
@@ -157,14 +196,15 @@ a.Title-links{
 .container {
   /* Position the image container (needed to position the left and right arrows) */
   position: relative;
-
 }
+
 .container-fluid {
   text-align: center;
 }
 
 img {
-  box-shadow: 2px 2px 5px black;
+  -webkit-box-shadow: 3px 3px 5px 6px black;
+  box-shadow: 1px 1px 1px black;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -261,8 +301,9 @@ SECOND SET OF ARROWS */
 
 /* Six columns side by side */
 .column {
+  display: flex;
   float: left;
-  width: 10%;
+  width: 7%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -305,10 +346,14 @@ SECOND SET OF ARROWS */
 
 
 
-footer {
+.footer {
   text-shadow: 2px 2px 5px black;
   border: solid  #250000;
   font-family: titleFont1;
   padding: 0px;
   color: black;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
