@@ -228,11 +228,10 @@ img {
   cursor: pointer;
   position: absolute;
   width: auto;
-  margin-top: 5px;
-  padding: 10px;
+  padding: 5px;
   color: white;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 20px;
   border-radius: 0 2px 2px 0;
   user-select: none;
   -webkit-user-select: none;
@@ -244,24 +243,28 @@ SECOND SET OF ARROWS */
   cursor: pointer;
   position: fixed;
   width: auto;
-  bottom: 200px;
+  bottom: 125px;
   padding: 16px;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 35px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
 }
 
+.prev {
+  left: 0px;
+  border-radius: 3px 0 0 3px;
+}
 /* Position the "prev button" to the lower left */
 .prev2 {
-  left: 110px;
+  left: 25px;
   border-radius: 3px 0 0 3px;
 }
 /* Position the "prev button" to the lower right */
 .next2 {
-  right: 110px;
+  right: 25px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -271,7 +274,7 @@ SECOND SET OF ARROWS */
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a background color with a little bit see-through */
 .prev:hover,
 .next:hover,
 .prev2:hover,
@@ -292,6 +295,7 @@ SECOND SET OF ARROWS */
 /* Container for image text */
 .caption-container {
   text-shadow: 2px 2px 5px black;
+  font-size: 16px;
   text-align: center;
   background-color: #222;
   border: solid grey;
@@ -361,7 +365,7 @@ SECOND SET OF ARROWS */
 #boxDesign1 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid #424242;
-  height: 300px;
+  height: 215px;
   width: 8px;
   position: relative;
   left: 0px;
@@ -373,8 +377,8 @@ SECOND SET OF ARROWS */
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 8px solid #424242;
-  height: 300px;
+  border-right: 10px solid #424242;
+  height: 215px;
   width: 8px;
   position: relative;
   right: 0px;
@@ -385,7 +389,7 @@ SECOND SET OF ARROWS */
 #boxDesign2 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 10px solid #8E8E8E;
-  height: 250px;
+  height: 185px;
   width: 10px;
   position: relative;
   position: fixed;
@@ -398,7 +402,7 @@ SECOND SET OF ARROWS */
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-right: 10px solid #8E8E8E;
-  height: 250px;
+  height: 185px;
   width: 10px;
   position: relative;
   position: fixed;
@@ -409,7 +413,7 @@ SECOND SET OF ARROWS */
 #boxDesign3 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid #701B09;
-  height: 200px;
+  height: 150px;
   width: 8px;
   position: relative;
   position: fixed;
@@ -422,7 +426,7 @@ SECOND SET OF ARROWS */
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-right: 8px solid #701B09;
-  height: 200px;
+  height: 150px;
   width: 8px;
   position: relative;
   position: fixed;
@@ -433,7 +437,7 @@ SECOND SET OF ARROWS */
 #boxDesign4 {
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-left: 6px solid #C3C3C3;
-  height: 150px;
+  height: 115px;
   width: 6px;
   position: relative;
   position: fixed;
@@ -446,7 +450,7 @@ SECOND SET OF ARROWS */
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-right: 6px solid #C3C3C3;
-  height: 150px;
+  height: 115px;
   width: 6px;
   position: relative;
   position: fixed;
@@ -457,7 +461,7 @@ SECOND SET OF ARROWS */
 #boxDesign5 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid #424242;
-  height: 100px;
+  height: 90px;
   width: 8px;
   position: relative;
   position: fixed;
@@ -470,7 +474,7 @@ SECOND SET OF ARROWS */
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-right: 8px solid #424242;
-  height: 100px;
+  height: 90px;
   width: 8px;
   position: relative;
   position: fixed;
@@ -481,7 +485,7 @@ SECOND SET OF ARROWS */
 #boxDesign6 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid black;
-  height: 70px;
+  height: 60px;
   width: 8px;
   width: 100%;
   position: relative;
@@ -493,7 +497,7 @@ SECOND SET OF ARROWS */
 #boxDesignR6 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid black;
-  height: 70px;
+  height: 60px;
   width: 8px;
   position: relative;
   position: fixed;
