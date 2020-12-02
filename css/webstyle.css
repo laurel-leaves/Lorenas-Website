@@ -68,9 +68,16 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
   background-color: #701B09;
 }
 .bg-3 {
-  background-color: #6C6C6C;
+  background-color: #B5B5B5;
 }
 
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* NAVBAR */
 #myNavbar{
@@ -139,7 +146,7 @@ a.Title-links{
 }
 .links:hover {
   text-decoration:none;
-  color: white;
+  color: #701B09;
 }
 
 /* GALLERY THUMBNAILS */
@@ -155,14 +162,18 @@ a.Title-links{
   -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
   box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
-  width: 70%;
-
+  width: 40%;
+  border-radius: 0px;
 }
 
 /* WRITING */
 .aboutSection {
-  float: right;
-  margin-left: 25px;
+  text-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  padding: 30px;
+}
+
+.contact {
+
 }
 
 
@@ -181,11 +192,6 @@ a.Title-links{
   font-color: black;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .container {
   /* Position the image container (needed to position the left and right arrows) */
   position: relative;
@@ -196,11 +202,15 @@ a.Title-links{
 }
 
 img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.mainSlides {
+  border: double;
+  border-weight: bold;
+  border-color: black;
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -232,11 +242,11 @@ SECOND SET OF ARROWS */
 .prev2,
 .next2 {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   width: auto;
-  top: 50%;
+  bottom: 200px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -244,10 +254,20 @@ SECOND SET OF ARROWS */
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next,
+/* Position the "prev button" to the lower left */
+.prev2 {
+  left: 110px;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "prev button" to the lower right */
 .next2 {
-  right: 0;
+  right: 110px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0px;;
   border-radius: 3px 0 0 3px;
 }
 
@@ -338,38 +358,78 @@ SECOND SET OF ARROWS */
 
 /* BOX DESIGNS */
 /* LEFT SIDE */
-
 #boxDesign1 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid #424242;
-  height: 475px;
+  height: 300px;
   width: 8px;
   position: relative;
   left: 0px;
   position: fixed;
-  left: 0;
   bottom: 0;
 }
+/* RIGHT SIDE  */
+#boxDesignR1 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 8px solid #424242;
+  height: 300px;
+  width: 8px;
+  position: relative;
+  right: 0px;
+  position: fixed;
+  bottom: 0;
+}
+/* LEFT SIDE */
 #boxDesign2 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 10px solid #8E8E8E;
-  height: 290px;
+  height: 250px;
   width: 10px;
   position: relative;
   position: fixed;
   left: 8px;
   bottom: 0;
 }
+/* RIGHT SIDE */
+#boxDesignR2 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 10px solid #8E8E8E;
+  height: 250px;
+  width: 10px;
+  position: relative;
+  position: fixed;
+  right: 8px;
+  bottom: 0;
+}
+/* LEFT SIDE */
 #boxDesign3 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 8px solid #2F0505;
-  height: 220px;
+  border-left: 8px solid #701B09;
+  height: 200px;
   width: 8px;
   position: relative;
   position: fixed;
   left: 18px;
   bottom: 0;
 }
+/* RIGHT SIDE */
+#boxDesignR3 {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
+  border-right: 8px solid #701B09;
+  height: 200px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  right: 18px;
+  bottom: 0;
+}
+/* LEFT SIDE */
 #boxDesign4 {
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-left: 6px solid #C3C3C3;
@@ -380,89 +440,7 @@ SECOND SET OF ARROWS */
   left: 26px;
   bottom: 0;
 }
-#boxDesign5 {
-  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 8px solid #424242;
-  height: 100px;
-  width: 8px;
-  position: relative;
-  position: fixed;
-  left: 32px;
-  bottom: 0;
-}
-#boxDesign6 {
-  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 8px solid black;
-  height: 70px;
-  width: 8px;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  left: 40px;
-  bottom: 0;
-}
-#boxDesign7 {
-  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 8px solid white;
-  height: 30px;
-  width: 8px;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  left: 48px;
-  bottom: 0;
-}
-#boxDesign8 {
-  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 6px solid #2F0505;
-  height: 10px;
-  width: 6px;
-  width: 100%;
-  position: relative;
-  position: fixed;
-  left: 56px;
-  bottom: 0;
-}
-
-
-
-/* RIGHT SIDE  */
-#boxDesignR1 {
-  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 8px solid #424242;
-  height: 475px;
-  width: 8px;
-  position: relative;
-  right: 0px;
-  position: fixed;
-  bottom: 0;
-}
-#boxDesignR2 {
-  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 10px solid #8E8E8E;
-  height: 290px;
-  width: 10px;
-  position: relative;
-  position: fixed;
-  right: 8px;
-  bottom: 0;
-}
-#boxDesignR3 {
-  -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 8px solid #2F0505;
-  height: 220px;
-  width: 8px;
-  position: relative;
-  position: fixed;
-  right: 18px;
-  bottom: 0;
-}
+/* RIGHT SIDE */
 #boxDesignR4 {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
@@ -475,6 +453,18 @@ SECOND SET OF ARROWS */
   right: 26px;
   bottom: 0;
 }
+/* LEFT SIDE */
+#boxDesign5 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid #424242;
+  height: 100px;
+  width: 8px;
+  position: relative;
+  position: fixed;
+  left: 32px;
+  bottom: 0;
+}
+/* RIGHT SIDE */
 #boxDesignR5 {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
@@ -487,6 +477,19 @@ SECOND SET OF ARROWS */
   right: 32px;
   bottom: 0;
 }
+/* LEFT SIDE */
+#boxDesign6 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid black;
+  height: 70px;
+  width: 8px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  left: 40px;
+  bottom: 0;
+}
+/* RIGHT SIDE */
 #boxDesignR6 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
   border-left: 8px solid black;
@@ -497,6 +500,19 @@ SECOND SET OF ARROWS */
   right: 40px;
   bottom: 0;
 }
+/* LEFT SIDE */
+#boxDesign7 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 8px solid white;
+  height: 30px;
+  width: 8px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  left: 48px;
+  bottom: 0;
+}
+/* RIGHT SIDE */
 #boxDesignR7 {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
@@ -509,11 +525,23 @@ SECOND SET OF ARROWS */
   right: 48px;
   bottom: 0;
 }
+/* LEFT SIDE */
+#boxDesign8 {
+  box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
+  border-left: 6px solid #701B09;
+  height: 10px;
+  width: 6px;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  left: 56px;
+  bottom: 0;
+}
 #boxDesignR8 {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 6px solid #2F0505;
+  border-right: 6px solid #701B09;
   height: 10px;
   width: 6px;
   position: relative;
@@ -522,10 +550,18 @@ SECOND SET OF ARROWS */
   bottom: 0;
 }
 
-#footer,
+#footer {
+  text-shadow: 0px 0px 5px black;
+  font-family: titleFont2;
+  color: black;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
 .footer {
   text-shadow: 0px 0px 5px black;
-  font-family: titleFont1;
+  font-family: titleFont2;
   color: black;
   position: relative;
   width: 100%;
