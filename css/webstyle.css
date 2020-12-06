@@ -50,7 +50,7 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
 #titleFont3 {
     font-family: TitleFont-3;
     text-align: center;
-    color: 404040;
+    color: #404040;
 }
 
 #titleFont4 {
@@ -68,7 +68,7 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
   background-color: #701B09;
 }
 .bg-3 {
-  background-color: #B5B5B5;
+  background-color: #C6C6C7;
 }
 
 
@@ -332,39 +332,11 @@ SECOND SET OF ARROWS */
 }
 
 
-
-
-/* BACK BUTTON */
-.button {
-  display: inline-block;
-  padding: 3px 3px;
-  font-size: 15px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: grey;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 9px #999;
-}
-.button:hover {
-  background-color: black;
-}
-.button:active {
-  background-color: grey;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
-
 /* BOX DESIGNS */
 /* LEFT SIDE */
 #boxDesign1 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 8px solid #424242;
+  border-left: 8px solid #9B99AA;
   height: 215px;
   width: 8px;
   position: relative;
@@ -377,7 +349,7 @@ SECOND SET OF ARROWS */
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 10px solid #424242;
+  border-right: 10px solid #9B99AA;
   height: 215px;
   width: 8px;
   position: relative;
@@ -388,7 +360,7 @@ SECOND SET OF ARROWS */
 /* LEFT SIDE */
 #boxDesign2 {
   box-shadow: 4px 0px 15px 1px rgba(0,0,0,1);
-  border-left: 10px solid #8E8E8E;
+  border-left: 10px solid #424242;
   height: 185px;
   width: 10px;
   position: relative;
@@ -401,7 +373,7 @@ SECOND SET OF ARROWS */
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  border-right: 10px solid #8E8E8E;
+  border-right: 10px solid #424242;
   height: 185px;
   width: 10px;
   position: relative;
@@ -424,7 +396,6 @@ SECOND SET OF ARROWS */
 #boxDesignR3 {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
-  box-shadow: 0px 0px 15px 1px rgba(0,0,0,1);
   border-right: 8px solid #701B09;
   height: 150px;
   width: 8px;
