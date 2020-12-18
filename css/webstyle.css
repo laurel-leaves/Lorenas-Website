@@ -14,13 +14,12 @@ rgba( 255, 99, 71, 0.4)-->
   hue 0-360 0 is red, 120 is green, 240 is blue
   sat is % 0 is shade of gray, 100% is full color
   lightness is % 0 is black and 100% is white */
-/* html,
-header,
-body,
-footer{
+
+/* body {
   transform: scale(1);
   transform-origin: (0, 0);
 } */
+
 
 @font-face {
 font-family: TitleFont-1;
@@ -222,7 +221,7 @@ img {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons ARE NOT BEING USED!!!!*/
 .prev,
 .next {
   cursor: pointer;
@@ -237,13 +236,13 @@ img {
   -webkit-user-select: none;
 }
 /*
-SECOND SET OF ARROWS */
+SECOND SET OF ARROWS LOWER */
 .prev2,
 .next2 {
   cursor: pointer;
   position: fixed;
   width: auto;
-  bottom: 125px;
+  bottom: 195px;
   padding: 16px;
   color: black;
   font-weight: bold;
@@ -529,7 +528,7 @@ SECOND SET OF ARROWS */
   text-shadow: 0px 0px 5px black;
   font-family: titleFont2;
   color: black;
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
