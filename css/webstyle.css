@@ -250,6 +250,7 @@ SECOND SET OF ARROWS LOWER */
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  opacity: .7;
 }
 
 .prev {
@@ -317,7 +318,8 @@ SECOND SET OF ARROWS LOWER */
 .column {
   display: flex;
   float: left;
-  width: 7%;
+  width: 15%;
+  height: 15%;
 }
 
 /* Add a transparency effect for thumnbail images */
