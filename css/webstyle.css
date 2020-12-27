@@ -167,7 +167,7 @@ a.Title-links{
 
 /* WRITING */
 .aboutSection {
-  text-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  text-shadow: 2px 2px 5px #646464;
   padding: 30px;
 }
 
@@ -318,8 +318,7 @@ SECOND SET OF ARROWS LOWER */
 .column {
   display: flex;
   float: left;
-  width: 15%;
-  height: 15%;
+  width: 13%;
 }
 
 /* Add a transparency effect for thumnbail images */
