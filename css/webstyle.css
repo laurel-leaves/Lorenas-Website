@@ -315,7 +315,6 @@ SECOND SET OF ARROWS LOWER */
 
 /* Six columns side by side */
 .column {
-  display: flex;
   width: 13%;
 }
 
