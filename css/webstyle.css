@@ -104,6 +104,9 @@ li a {
 h1 {
 padding: 15px;
 }
+h4{
+  text-shadow: 2px 2px 5px black;
+}
 h6 {
   color: black;
 }
@@ -146,10 +149,8 @@ a.Title-links{
 .links:hover {
   text-decoration:none;
   color: #701B09;
+  opacity: 1;
 }
-
-/* GALLERY THUMBNAILS */
-
 
 
 /* ABOUT ME */
@@ -200,6 +201,13 @@ img {
   margin-right: auto;
 }
 
+
+
+/* GALLERY */
+.imgLinks {
+  opacity: .7;
+
+}
 .mainSlides {
   border: double;
   border-weight: bold;
@@ -216,7 +224,7 @@ img {
   cursor: pointer;
 }
 
-/* Next & previous buttons ARE NOT BEING USED!!!!*/
+/*ARE NOT BEING USED!!!! Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
