@@ -149,9 +149,7 @@ a.Title-links{
 }
 
 /* GALLERY THUMBNAILS */
-.row {
-  align-items: baseline;
-}
+
 
 
 /* ABOUT ME */
@@ -171,9 +169,6 @@ a.Title-links{
   padding: 30px;
 }
 
-.contact {
-
-}
 
 
 
@@ -304,10 +299,6 @@ SECOND SET OF ARROWS LOWER */
   color: white;
 }
 
-.row {
-    align-items: center;
-}
-
 .row:after {
   content: "";
   display: table;
@@ -317,7 +308,6 @@ SECOND SET OF ARROWS LOWER */
 /* Six columns side by side */
 .column {
   display: flex;
-  float: left;
   width: 13%;
 }
 
