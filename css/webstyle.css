@@ -151,6 +151,14 @@ a.Title-links{
   color: #701B09;
   opacity: 1;
 }
+.cap-links{
+    text-shadow: 2px 2px 5px black;
+    color: #701B09;
+    opacity: .7;
+}
+.cap-links:hover {
+  color: white;
+}
 
 
 /* ABOUT ME */
@@ -166,7 +174,7 @@ a.Title-links{
 
 /* WRITING */
 .aboutSection {
-  text-shadow: 2px 2px 5px #646464;
+  text-shadow: 2px 2px 5px black;
   padding: 30px;
 }
 
@@ -175,6 +183,7 @@ a.Title-links{
 
 /* viewResumeButton  */
 .viewResumeButton {
+  box-shadow: 7px 7px 15px 1px rgba(0,0,0,1);
   font-family: titleFont-3;
   background-color: #777777;
   color: black;
@@ -216,7 +225,9 @@ img {
 
 /* Hide the images by default */
 .mySlides {
+    text-shadow: 2px 2px 5px #646464;
   display: none;
+
 }
 
 /* Add a pointer when hovering over the thumbnail images */
