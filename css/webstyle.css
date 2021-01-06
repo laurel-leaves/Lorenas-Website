@@ -1,15 +1,5 @@
 /* STYLE SHEET FOR THE WEBSITE*/
 
-
-/* If the screen size is 600px wide or less, hide the element */
-/* @media only screen and (max-width: 600px) {
-  div.example {
-    display: none;
-  }
-} */
-/*
-rgba( 255, 99, 71, 0.4)-->
-
 /* hsl(hue, saturation, lightness)
   hue 0-360 0 is red, 120 is green, 240 is blue
   sat is % 0 is shade of gray, 100% is full color
@@ -47,14 +37,13 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
   src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
 }
 #titleFont3 {
-    font-family: TitleFont-3;
-    text-align: center;
-    color: #404040;
+  font-family: TitleFont-3;
+  text-align: center;
+  color: #404040;
 }
-
 #titleFont4 {
-    text-align: center;
-    color: grey;
+  text-align: center;
+  color: grey;
 }
 
 
@@ -71,7 +60,7 @@ src: url(Fonts/font_6/Alegreya_SC/AlegreyaSC-Regular.ttf);
 }
 
 
-
+/* CENTER */
 .center {
   display: flex;
   justify-content: center;
@@ -101,6 +90,8 @@ li a {
   font-size: 19px;
   color: white;
 }
+
+/* TEXT SPECIFICS */
 h1 {
 padding: 15px;
 }
@@ -151,18 +142,21 @@ a.Title-links{
   color: #701B09;
   opacity: 1;
 }
-.cap-links{
-    text-shadow: 2px 2px 5px black;
-    color: #701B09;
-    opacity: .7;
+
+.container {
+  /* Position the image container (needed to position the left and right arrows) */
+  position: relative;
 }
-.cap-links:hover {
-  color: white;
+.container-fluid {
+  text-align: center;
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ABOUT ME */
-
 /* PICTURE OF ME */
 .myImg {
   -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
@@ -171,16 +165,11 @@ a.Title-links{
   width: 40%;
   border-radius: 0px;
 }
-
 /* WRITING */
 .aboutSection {
   text-shadow: 2px 2px 5px black;
   padding: 30px;
 }
-
-
-
-
 /* viewResumeButton  */
 .viewResumeButton {
   box-shadow: 7px 7px 15px 1px rgba(0,0,0,1);
@@ -196,23 +185,9 @@ a.Title-links{
   font-color: black;
 }
 
-.container {
-  /* Position the image container (needed to position the left and right arrows) */
-  position: relative;
-}
-
-.container-fluid {
-  text-align: center;
-}
-
-img {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
-
-/* GALLERY */
+/* GALLERY SLIDES */
 .imgLinks {
   opacity: .7;
 
@@ -227,7 +202,6 @@ img {
 .mySlides {
     text-shadow: 2px 2px 5px #646464;
   display: none;
-
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -235,64 +209,67 @@ img {
   cursor: pointer;
 }
 
-/*ARE NOT BEING USED!!!! Next & previous buttons */
+
+/* THUMBNAILS OF SLIDES */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  width: 10%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* IMAGE CAPTIONS */
+.cap-links{
+    text-shadow: 2px 2px 5px black;
+    color: #701B09;
+    opacity: .7;
+}
+.cap-links:hover {
+  color: white;
+}
+.projects-cap {
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+
+/*SECOND SET OF ARROWS, LOWER */
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding: 5px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 2px 2px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-/*
-SECOND SET OF ARROWS LOWER */
-.prev2,
-.next2 {
-  cursor: pointer;
   position: fixed;
   width: auto;
-  bottom: 195px;
-  padding: 16px;
+  bottom: 200px;
+  padding: 10px;
   color: black;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
   opacity: .7;
 }
-
 .prev {
-  left: 0px;
+  left: 20px;
   border-radius: 3px 0 0 3px;
 }
-/* Position the "prev button" to the lower left */
-.prev2 {
-  left: 25px;
-  border-radius: 3px 0 0 3px;
-}
-/* Position the "prev button" to the lower right */
-.next2 {
-  right: 25px;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Position the "next button" to the right */
 .next {
-  right: 0px;;
+  right: 20px;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a background color with a little bit see-through */
 .prev:hover,
-.next:hover,
-.prev2:hover,
-.next2:hover{
+.next:hover{
   text-decoration: none;
   color: #701B09;
   background-color:  #8b8a8a;
@@ -305,8 +282,7 @@ SECOND SET OF ARROWS LOWER */
   padding: 8px 12px;
   top: 0;
 }
-
-/* Container for image text */
+/* Container for text in between thumbnails and main slides*/
 .caption-container {
   text-shadow: 2px 2px 5px black;
   font-size: 16px;
@@ -316,27 +292,6 @@ SECOND SET OF ARROWS LOWER */
   border-width: thin;
   padding: 5px 5px;
   color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  width: 13%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
 }
 
 
