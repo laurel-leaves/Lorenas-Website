@@ -1,4 +1,5 @@
 
+
 // SLIDESHOW GALLERY
 var slideIndex = 1;
 showSlides(slideIndex);

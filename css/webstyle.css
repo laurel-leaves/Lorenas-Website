@@ -87,9 +87,10 @@ ul {
   color: white;
 }
 li a {
-  font-size: 19px;
+  font-size: 18px;
   color: white;
 }
+
 
 /* TEXT SPECIFICS */
 h1 {
@@ -129,8 +130,8 @@ a.img-links{
 }
 a.Title-links{
   text-shadow: 2px 2px 5px black;
-  text-align: center;
-  font-size: 32.5px;
+  text-align: left;
+  font-size: 30px;
   color: Grey;
 }
 .Title-links:hover {
@@ -157,6 +158,39 @@ img {
 }
 
 /* ABOUT ME */
+/* LINE DECORATION */
+.aboutLine {
+  width: 100%;
+  height: 10px;
+  background-color: #494949 ;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+}
+.aboutLine-2 {
+  width: 75%;
+  height: 5px;
+  background-color: #dadada;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+}
+.aboutLine-3 {
+  width: 50%;
+  height: 9px;
+  background-color: #701B09;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+}
+.aboutLine-4 {
+  width: 25%;
+  height: 5px;
+  background-color: #818181;
+  -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+  box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
+}
 /* PICTURE OF ME */
 .myImg {
   -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
@@ -167,7 +201,7 @@ img {
 }
 /* WRITING */
 .aboutSection {
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 5px #363636;
   padding: 30px;
 }
 /* viewResumeButton  */
