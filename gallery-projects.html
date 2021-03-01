@@ -88,7 +88,7 @@
   <div class="container-fluid bg-2 text-center">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
        <h2 style="text-shadow: 2px 2px 5px black; padding-top: 60px">Projects</h2>
-       <h4>(More to come)</h4>
+
        <h4></h4>
       </div>
     </div>
@@ -97,20 +97,31 @@
 
 
 
-
-
+<!-- GALLERY SLIDE THUMBNAILS -->
 <div style="border: solid  #250000; padding: 2px" id="titleFont3" class="bg-1 center">
-  <div style="border: solid  #250000; padding: 1.75px" class="column">
-      <img class="demo cursor" src="assets/Garden-4.jpg"
-      style="width:90%" onclick="currentSlide(1)" alt="Garden for a Changing Climate,
-       <em>2018</em>">
+
+  <div class="column">
+      <img class="demo cursor" src="assets/PROJECTS/amp-5.jpg"
+      style="border: solid  #250000; padding: 1px; width:75%"
+       onclick="currentSlide(1)" alt="Bottlehead Amplifier with Speedball Upgrade,
+       <em>2021</em>">
   </div>
-    <div style="border: solid  #250000; padding: 1.75px" class="column">
-        <img class="demo cursor" src="assets/octopus.jpg"
-        style="width:90%" onclick="currentSlide(2)" alt="Octopus, <em>2019</em>, Arduino ">
-    </div>
+
+  <div class="column">
+      <img class="demo cursor" src="assets/PROJECTS/octopus.jpg"
+      style="border: solid  #250000; padding: 1.75px; width:90%"
+      onclick="currentSlide(2)" alt="Octopus, <em>2019</em>, Arduino ">
   </div>
+
+  <div class="column">
+      <img class="demo cursor" src="assets/PROJECTS/Garden-4.jpg"
+      style="border: solid  #250000; padding: 1.75px; width:90%"
+      onclick="currentSlide(3)" alt="Garden for a Changing Climate, <em>2018</em>">
+  </div>
+
+
 </div>
+
 
 
 <!-- CAPTION -->
@@ -119,36 +130,62 @@
 </div>
 
 
-
+<!-- MAIN SLIDES  -->
 <div class="container bg-3 center text-center" id="titleFont3">
-  <div class="mySlides projects-cap">
-    <div class="numbertext">1 / 2</div>
-      <img src="assets/Garden-3.jpg" class="img-responsive" style="width:100%">
-      <img src="assets/Garden-2.jpg" class="img-responsive" style="width:100%">
-      <a class="cap-links cursor" href="https://jennykendler.com/section/453504-Garden-for-a-Changing-Climate.html">
-        <h6>Photos by Jenny Kendler</h6>
-      </a>
-      <h5>In collaboration with
-        <a class="cap-links cursor" href="https://gallery400.uic.edu/">Gallery 400</a>
-        , UIC's on campus gallery, and environmental artist
-        <a class="cap-links cursor" href="https://jennykendler.com/home.html">
-          Jenny Kendler, </a>"Garden for a Changing Climate is a community-driven
-          participatory public art project that uses a traveling garden of local
-          plants to give Chicagoans a dynamic and tangible experience of the
-          central effects of climate change". This city wide project stopped by
-          the UIC Quad on April 23, one day after Earth day. After organizing with
-          Luis, a student worker at The UIC Greenhouse, he and I gave out over
-          100 potted plants to happy new plant parents! 
-          <br>  <h5> For more information -->
-          <a class="cap-links cursor" href="">
-         Garden for a Changing Climate</a></h5>
-      </h5>
+
+  <!-- Amplifier PROJECT -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+
+    <div class="center">
+      <div class="col-xs-6 col-sm-10 col-md-6 col-lg-3">
+        <img class="mainSlides" src="assets/PROJECTS/amp-5.jpg" class="img-responsive"
+        style="width:75%">
+      </div>
+      <div class="col-xs-6 col-sm-10 col-md-6 col-lg-3">
+        <img class="mainSlides" src="assets/PROJECTS/amp-6.jpg" class="img-responsive"
+        style="width:100%">
+      </div>
+    </div>
+<br>
+    <h5 class="projects-cap"> Upper images show the top side of the Amplifier.
+    </h5>
+<br>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+        <img class="mainSlides" src="assets/PROJECTS/amp-11.jpg" class="img-responsive"
+        style="width:60%">
+      </div>
+<br>
+<br>
+
+<!-- AMP CAPTION -->
+    <h5 class="projects-cap"> Here is the underside of the Amplifier.
+<br>
+    Building this headphone amplifier was a little challenging but also very rewarding!
+    <a class="cap-links cursor" href="https://bottlehead.com/">Bottlehead</a>
+    provides great step-by-step instructions to follow. With such a sturdy base
+    and build, there is no rattling or humming. The sound is warm and rich.
+    </h5>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img class="mainSlides" src="assets/PROJECTS/amp-4.jpg" class="img-responsive"
+        style="width:100%">
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <img class="mainSlides" src="assets/PROJECTS/amp-3.jpg" class="img-responsive"
+        style="width:100%">
+      </div>
+
   </div>
+
+
+  <!-- OCTOPUS PROJECT -->
   <div class="mySlides ">
-      <div class="numbertext">2 / 2</div>
+      <div class="numbertext">2 / 3</div>
       <video width="320" height="240" controls>
-        <source src="assets/octopus video.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
+        <source src="assets/PROJECTS/octopus video.mp4" type="video/mp4">
+        <source src="assets/PROJECTS/movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video>
       <h5 class="projects-cap">
@@ -160,6 +197,33 @@
         project and document it properly.
       </h5>
   </div>
+
+
+  <!-- GARDEN FOR A CHANGING CLIMATE  -->
+    <div class="mySlides projects-cap">
+      <div class="numbertext">3 / 3</div>
+        <img src="assets/PROJECTS/Garden-3.jpg" class="img-responsive" style="width:100%">
+        <img src="assets/PROJECTS/Garden-2.jpg" class="img-responsive" style="width:100%">
+        <a class="cap-links cursor" href="https://jennykendler.com/section/453504-Garden-for-a-Changing-Climate.html">
+          <h6>Photos by Jenny Kendler</h6>
+        </a>
+        <h5>In collaboration with
+          <a class="cap-links cursor" href="https://gallery400.uic.edu/">Gallery 400</a>
+          , UIC's on campus gallery, and environmental artist
+          <a class="cap-links cursor" href="https://jennykendler.com/home.html">
+            Jenny Kendler, </a>"Garden for a Changing Climate is a community-driven
+            participatory public art project that uses a traveling garden of local
+            plants to give Chicagoans a dynamic and tangible experience of the
+            central effects of climate change". This city wide project stopped by
+            the UIC Quad on April 23, one day after Earth day. After organizing with
+            Luis, a student worker at The UIC Greenhouse, he and I gave out over
+            100 potted plants to happy new plant parents!
+            <br>  <h5> For more information -->
+            <a class="cap-links cursor" href="">
+           Garden for a Changing Climate</a></h5>
+        </h5>
+    </div>
+
 </div>
 
 <!-- PREV AND NEXT BUTTONS -->
