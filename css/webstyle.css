@@ -129,8 +129,9 @@ a.img-links{
   border-color: #701B09;
 }
 a.Title-links{
+    text-align: center;
   text-shadow: 2px 2px 5px black;
-  text-align: left;
+
   font-size: 30px;
   color: Grey;
 }
@@ -209,10 +210,9 @@ i {
   font-size: 30px;
 }
 .fa {
-  border-width: medium;
-  font-size: 30px;
-  padding: 15px;
-  width: 60px;
+  font-size: 20px;
+  padding: 12.5px;
+  width: 45px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
