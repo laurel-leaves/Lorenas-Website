@@ -96,8 +96,8 @@ li a {
 h1 {
 padding: 15px;
 }
-h4{
-  text-shadow: 2px 2px 5px black;
+h2 {
+  background-color: black;
 }
 h6 {
   color: black;
