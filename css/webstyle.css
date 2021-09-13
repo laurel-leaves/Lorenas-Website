@@ -200,11 +200,15 @@ img {
   width: 40%;
   border-radius: 0px;
 }
+
+
 /* WRITING */
 .aboutSection {
   text-shadow: 2px 2px 5px #363636;
   padding: 30px;
 }
+
+
 /* Social Media Buttons */
 i {
   font-size: 30px;
@@ -223,7 +227,9 @@ i {
   color: white;
   text-decoration: none;
 }
-.fa-instagram {
+.fa-instagram,
+.fa-linkedin,
+.fa-github {
   background-color: #701B09;
   color: white;
 }
@@ -281,10 +287,13 @@ i {
 .demo {
   opacity: 0.6;
 }
-.active,
 .demo:hover {
   opacity: 1;
 }
+.active {
+  text-decoration: underline;
+}
+
 
 /* IMAGE CAPTIONS */
 .cap-links{
