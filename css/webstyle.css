@@ -129,13 +129,13 @@ a.img-links{
   border-color: #701B09;
 }
 a.Title-links{
-    text-align: center;
+  text-align: center;
   text-shadow: 2px 2px 5px black;
-
   font-size: 30px;
   color: Grey;
 }
 .Title-links:hover {
+  text-align: center;
   text-decoration:none;
   color: #701B09;
 }
@@ -192,20 +192,24 @@ img {
   -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
   box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
 }
+
+
 /* PICTURE OF ME */
 .myImg {
   -webkit-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
   box-shadow: 10px 10px 15px 1px rgba(0,0,0,1);
-  width: 40%;
-  border-radius: 5px;
+  width: 25%;
+  border-radius: 500px;
 }
 
 
 /* WRITING */
 .aboutSection {
-  text-shadow: 2px 2px 5px #363636;
-  padding: 30px;
+  text-shadow: 2px 2px 6px #363636;
+  padding: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 
