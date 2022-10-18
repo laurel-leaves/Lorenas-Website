@@ -227,7 +227,7 @@ i {
 
 }
 .fa:hover {
-  background-color: #363636;
+  background-color: black;
   color: white;
   text-decoration: none;
 }
@@ -235,7 +235,7 @@ i {
 .fa-linkedin,
 .fa-github,
 .fa-etsy {
-  background-color: #701B09;
+  background-color: #363636;
   color: white;
 }
 
